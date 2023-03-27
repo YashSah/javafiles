@@ -20,11 +20,11 @@ public class quickSort {
         return i;
     }
 
-    public static void quicksort(int arr[], int low, int high) {
+    public static void quickSort(int arr[], int low, int high) {
         if (low < high) {
             int pidx = partition(arr, low, high);// pidx->pivot index
-            quicksort(arr, low, pidx - 1);
-            quicksort(arr, pidx + 1, high);
+            quickSort(arr, low, pidx - 1);
+            quickSort(arr, pidx + 1, high);
         }
     }
 
@@ -33,7 +33,7 @@ public class quickSort {
         int n = arr.length;
         quickSort(arr, 0, n - 1);
         for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + "");
+            System.out.print(arr[i] + " ");
         }
         System.out.println();
     }

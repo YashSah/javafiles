@@ -16,7 +16,7 @@ public class ListNode {
     }
 }
 
-public class palindrome {
+public class palindromeLL {
     public ListNode reverse(ListNode head) {
         ListNode prev = null;
         ListNode curr = head;

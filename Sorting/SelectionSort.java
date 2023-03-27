@@ -20,9 +20,11 @@ public class SelectionSort {
                     smallest = j;
                 }
             }
-            int temp = arr[smallest];
-            arr[smallest] = arr[i];
-            arr[i] = temp;
+            if (smallest != i) {
+                int temp = arr[smallest];
+                arr[smallest] = arr[i];
+                arr[i] = temp;
+            }
         }
         printArray(arr);
     }
